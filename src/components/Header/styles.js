@@ -3,6 +3,9 @@ import { Typography, AppBar } from "@material-ui/core";
 
 export const Wrapper = styled(AppBar)`
   box-shadow: none;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
 `;
 
 export const CdnLogo = styled.img`
@@ -16,7 +19,6 @@ export const TextNavegation = styled(Typography)`
 
 export const NavBar = styled.div`
   background-color: #fff;
-  padding: 0 15.75rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
