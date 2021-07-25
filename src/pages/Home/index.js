@@ -1,10 +1,10 @@
 import CoverBackground from "../../assets/cover.png";
-import { Button, Section, SectionTestimonials } from "./styles";
+import { Button, Main, Section, SectionTestimonials } from "./styles";
 
 const Home = () => {
   return (
     <>
-      <main>
+      <Main>
         <Section>
           <img src={CoverBackground} alt="Pessoal da ong" />
           <h1>Quem Somos</h1>
@@ -36,7 +36,7 @@ const Home = () => {
             </p>
           </div>
         </SectionTestimonials>
-      </main>
+      </Main>
     </>
   );
 };
