@@ -57,6 +57,15 @@ export const Section = styled.section`
           margin-bottom: 8px;
           margin-left: 8px;
         }
+
+        ::placeholder,
+        ::-webkit-input-placeholder {
+          color: #0f264f;
+        }
+        :-ms-input-placeholder {
+          color: #0f264f;
+        }
+
         width: calc(50% - 4px);
         max-width: 250px;
         height: 48px;
@@ -94,6 +103,14 @@ export const Section = styled.section`
         font-size: 18px;
 
         color: #0f264f;
+
+        ::placeholder,
+        ::-webkit-input-placeholder {
+          color: #0f264f;
+        }
+        :-ms-input-placeholder {
+          color: #0f264f;
+        }
       }
 
       button {

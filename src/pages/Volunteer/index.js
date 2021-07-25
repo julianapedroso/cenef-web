@@ -16,7 +16,7 @@ const Volunteer = () => {
             <p>Quer fazer parte? Entre em contato conosco:</p>
           </div>
           <form>
-            <input placeholder="Nome  " />
+            <input placeholder="Nome" />
             <input placeholder="Sobrenome" />
             <input placeholder="Telefone" />
             <input placeholder="Email" />
