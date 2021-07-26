@@ -1,7 +1,25 @@
 import VolunteerImg from "../../assets/voluntario.png";
 import { Image, Main, Section } from "./styles";
+import emailjs from 'emailjs-com';
+import { config } from 'dotenv'
+
+config()
 
 const Volunteer = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_80h12o8', 'template_e9qoe9e', e.target, process.env.REACT_APP_USER_ID)
+      .then((result) => {
+          console.log(result.text);
+          alert("Mensagem enviada com sucesso!")
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+
   return (
     <Main>
       <Section>
@@ -15,13 +33,13 @@ const Volunteer = () => {
             </p>
             <p>Quer fazer parte? Entre em contato conosco:</p>
           </div>
-          <form>
-            <input placeholder="Nome" />
-            <input placeholder="Sobrenome" />
-            <input placeholder="Telefone" />
-            <input placeholder="Email" />
-            <textarea placeholder="Digite sua mensagem " />
-            <button>Enviar</button>
+          <form onSubmit={sendEmail}>
+            <input name="name" placeholder="Nome" />
+            <input name="lastname" placeholder="Sobrenome" />
+            <input name="phone" placeholder="Telefone" />
+            <input name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Digite sua mensagem " />
+            <button type='submit'>Enviar</button>
           </form>
         </div>
         
