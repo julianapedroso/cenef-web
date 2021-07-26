@@ -1,42 +1,71 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  
+  max-width: 1440px;
 `;
 
 export const Section = styled.section`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-max-width: 1440px;
-margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 32px auto;
+
+  @media (max-width: 499px) {
+    margin: 0;
+  }
 
   h1 {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 60px;
-  color: #0F264F;
-  padding: 32px 0;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 60px;
+
+    @media (max-width: 499px) {
+      font-size: 38px;
+    }
+
+    color: #0f264f;
+    padding: 32px 0;
+
+    @media (max-width: 499px) {
+      padding: 16px 0;
+    }
   }
-  
+
   img {
     height: auto;
     width: 100%;
+
+    @media (max-width: 499px) {
+      width: 10%;
+    }
+
     padding-top: 200px;
   }
-  
+
   p {
     font-family: DM Sans;
     font-size: 28px;
+
+    @media (max-width: 499px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     line-height: 35px;
-    color: #0F264F;
+    color: #0f264f;
     padding: 0 32px;
   }
-`
+`;
 
 export const SectionTestimonials = styled.section`
   padding: 100px 0 60px 0;
+
+  @media (max-width: 499px) {
+    padding: 320px 0 0 0;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +77,12 @@ export const SectionTestimonials = styled.section`
     font-family: "DM Sans";
     font-weight: 500;
     font-size: 60px;
+
+    @media (max-width: 499px) {
+      font-size: 38px;
+      margin: 5px 32px;
+    }
+
     color: #0f264f;
     margin: 32px;
   }
@@ -59,24 +94,35 @@ export const SectionTestimonials = styled.section`
 
   p {
     font-family: DM Sans;
-    font-size: 1.75rem;
+    font-size: 28px;
+    line-height: 35px;
+
+    @media (max-width: 499px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     line-height: 35px;
     color: #0f264f;
-    padding: 0 32px;
+    padding: 10px 32px;
     max-width: 650px;
   }
 `;
 
 export const ContainerImage = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
   margin: 3rem 43rem;
   justify-content: left;
+  position: absolute;
 
-  @media (max-width: 499px) {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  @media (max-width: 450px) {
+    object-fit: cover;
+    margin: 0;
+
+    img {
+      top: 0;
+      position: fixed;
+      width: 100%;
+    }
   }
-`
+`;
