@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Main = styled.main`
 max-width: 1440px;
@@ -50,7 +51,8 @@ justify-content: center;
   }
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+text-decoration: none;
 background-color: #7C5CEA;
 color: #fff;
 padding: 16px 32px;

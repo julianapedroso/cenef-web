@@ -17,7 +17,7 @@ const Home = () => {
             atendimento terapêutico nas áreas de Psicologia e Psicopedagogia à
             comunidade em situação de vulnerabilidade social.
           </p>
-          <Button>Saiba Mais</Button>
+          <Button to='/quemsomos'>Saiba Mais</Button>
         </Section>
         <SectionTestimonials>
           <h1>Depoimentos</h1>
