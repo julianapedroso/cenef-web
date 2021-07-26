@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
+export const Main = styled.main`
   max-width: 1440px;
+  margin: 0 auto;
+  min-height: calc(100vh - 98px);
+`;
+
+export const Wrapper = styled.section`
+  width: 50%;
+
+  @media (max-width: 499px) {
+    width: 100%;
+    }
 `;
 
 export const Section = styled.section`
@@ -9,12 +19,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1440px;
-  margin: 32px auto;
-
-  @media (max-width: 499px) {
-    margin: 0;
-  }
+  margin-bottom: 100px;
 
   h1 {
     font-family: "DM Sans";
@@ -23,14 +28,12 @@ export const Section = styled.section`
 
     @media (max-width: 499px) {
       font-size: 38px;
+      padding: 16px 32px;
+      align-self: flex-start;
     }
 
     color: #0f264f;
     padding: 32px 0;
-
-    @media (max-width: 499px) {
-      padding: 16px 0;
-    }
   }
 
   img {
@@ -59,18 +62,19 @@ export const Section = styled.section`
   }
 `;
 
-export const SectionTestimonials = styled.section`
+export const SectionAboutUs = styled.section`
   padding: 100px 0 60px 0;
+  display: flex;
 
-  @media (max-width: 499px) {
-    padding: 320px 0 0 0;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
   }
 
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  max-width: 1440px;
-  margin: 0 auto;
+  align-items: center;
+
 
   h1 {
     display: flex;
@@ -80,7 +84,7 @@ export const SectionTestimonials = styled.section`
 
     @media (max-width: 499px) {
       font-size: 38px;
-      margin: 5px 32px;
+      margin: 10px 32px;
     }
 
     color: #0f264f;
@@ -110,19 +114,14 @@ export const SectionTestimonials = styled.section`
 `;
 
 export const ContainerImage = styled.div`
-  display: flex;
-  margin: 3rem 43rem;
-  justify-content: left;
-  position: absolute;
+width: 50%;
 
-  @media (max-width: 450px) {
-    object-fit: cover;
-    margin: 0;
-
+@media (max-width: 499px) {
+    width: 100%;
     img {
-      top: 0;
-      position: fixed;
       width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
-  }
+    }
 `;
