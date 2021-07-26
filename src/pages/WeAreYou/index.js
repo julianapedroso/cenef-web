@@ -12,27 +12,27 @@ const WeAreYou = () => {
   return (
     <main>
       <SectionTestimonials>
-        <h1>Quem Somos</h1>
-        <Wrapper>
-          <p>
-            O CENEF – Centro de Estudos e Orientação da Família é uma
-            instituição filantrópica que, há mais de 40 anos, realiza
-            atendimento terapêutico nas áreas de Psicologia e Psicopedagogia à
-            comunidade em situação de vulnerabilidade social.
-          </p>
-        </Wrapper>
-        <h1>Nossa Missão</h1>
-        <p>
-          Contribuir para o desenvolvimento humano saudável e para o
-          fortalecimento de vínculos familiares e sociais através de ações
-          multiprofissionais de promoção e prevenção.
-        </p>
         <ContainerImage>
           <img
             src={ImageCard}
             alt="Pessoas sorrindo e fazendo pose para foto"
           />
         </ContainerImage>
+        <Wrapper>
+          <h1>Quem Somos</h1>
+          <p>
+            O CENEF – Centro de Estudos e Orientação da Família é uma
+            instituição filantrópica que, há mais de 40 anos, realiza
+            atendimento terapêutico nas áreas de Psicologia e Psicopedagogia à
+            comunidade em situação de vulnerabilidade social.
+          </p>
+          <h1>Nossa Missão</h1>
+          <p>
+            Contribuir para o desenvolvimento humano saudável e para o
+            fortalecimento de vínculos familiares e sociais através de ações
+            multiprofissionais de promoção e prevenção.
+          </p>
+        </Wrapper>
       </SectionTestimonials>
       <Section>
         <h1>O que fazemos</h1>

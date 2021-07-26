@@ -14,7 +14,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/quem-somos" component={WeAreYou} />
+        <Route exact path="/quemsomos" component={WeAreYou} />
         <Route exact path="/doe" component={Donations} />
         <Route exact path="/contato" component={Contact} />
         <Route exact path="/sejavoluntario" component={Volunteer} />
