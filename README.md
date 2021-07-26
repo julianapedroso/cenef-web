@@ -1,6 +1,6 @@
 ## 💻 Sobre
 
-Esse repositório contém o código desenvolvido durante o evento HACK4GOOD da Provi, em que a equipe foi reponsável por criar um site para a ONG CENEF. 
+Esse repositório contém o código desenvolvido durante o evento HACK4GOOD da Provi, em que a equipe foi responsável por criar um site para a ONG CENEF. 
 
 ## [Visite](SITE AQUI)
 
