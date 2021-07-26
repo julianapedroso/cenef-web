@@ -1,23 +1,18 @@
 import React from "react";
 import {
   Section,
-  SectionTestimonials,
   Wrapper,
   ContainerImage,
+  SectionAboutUs,
 } from "./styles";
 // assets
 import ImageCard from "../../assets/image-card.png";
+import { Main } from "../Contact/styles";
 
-const WeAreYou = () => {
+const AboutUs = () => {
   return (
-    <main>
-      <SectionTestimonials>
-        <ContainerImage>
-          <img
-            src={ImageCard}
-            alt="Pessoas sorrindo e fazendo pose para foto"
-          />
-        </ContainerImage>
+    <Main>
+      <SectionAboutUs>
         <Wrapper>
           <h1>Quem Somos</h1>
           <p>
@@ -33,7 +28,13 @@ const WeAreYou = () => {
             multiprofissionais de promoção e prevenção.
           </p>
         </Wrapper>
-      </SectionTestimonials>
+        <ContainerImage>
+          <img
+            src={ImageCard}
+            alt="Pessoas sorrindo e fazendo pose para foto"
+          />
+        </ContainerImage>
+      </SectionAboutUs>
       <Section>
         <h1>O que fazemos</h1>
         <p>
@@ -69,8 +70,8 @@ const WeAreYou = () => {
           <br />- Abuso sexual infantil.
         </p>
       </Section>
-    </main>
+    </Main>
   );
 };
 
-export default WeAreYou;
+export default AboutUs;
