@@ -1,4 +1,4 @@
-import PixCenef from "../../assets/pixcenef.png";
+import PixCenef from "../../assets/pix_cenef.jpeg";
 import Donate from "../../assets/doador.png";
 import { Image, Main, Section } from "./styles";
 
@@ -17,6 +17,7 @@ const Donations = () => {
           </div>
 
           <img src={PixCenef} alt="QR Code pix cenef" />
+          <span>{'Para doar, entre no sua conta pelo app do banco, vá em Pix > Pagamento por QR Code.'}</span>
         </div>
         <Image src={Donate} alt="Mãos simbolizando doação" />
       </Section>

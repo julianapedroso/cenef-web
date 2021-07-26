@@ -45,6 +45,14 @@ export const Section = styled.section`
     img {
       max-width: 180px;
       align-self: center;
+    }
+
+    span {
+      font-family: DM Sans;
+      font-size: 20px;
+      line-height: 26px;
+
+      margin-top: 8px;
 
       @media (max-width: 450px) {
         margin-bottom: 100px;
