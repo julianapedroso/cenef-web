@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Main = styled.main`
 max-width: 1440px;
@@ -17,12 +18,23 @@ justify-content: center;
   font-size: 60px;
   color: #0F264F;
   padding: 32px 0;
+
+    @media (max-width: 450px) {
+      font-size: 38px;
+    }
   }
   
   img {
     height: auto;
     width: 100%;
     padding-top: 200px;
+
+    @media (max-width: 450px) {
+      height: 200px;
+      padding-top: 0;
+      margin-top: 98px;
+      object-fit: cover;
+    }
   }
   
   p {
@@ -31,10 +43,16 @@ justify-content: center;
     line-height: 35px;
     color: #0F264F;
     padding: 0 32px;
+
+    @media(max-width: 890px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+text-decoration: none;
 background-color: #7C5CEA;
 color: #fff;
 padding: 16px 32px;
@@ -62,13 +80,21 @@ justify-content: center;
     font-size: 60px;
     color: #0F264F;
     padding: 32px 0;
+
+    @media (max-width: 450px) {
+      font-size: 38px;
+    }
   }
   
   div {
     display: flex;
     justify-content: space-between;
-    /* padding: 0 32px; */
     width: 100%;
+
+    @media(max-width: 890px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   p {
@@ -77,6 +103,11 @@ justify-content: center;
     line-height: 35px;
     color: #0F264F;
     padding: 0 32px;
-    max-width: 460px;
+
+    @media(max-width: 890px) {
+      padding: 16px 32px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 `
