@@ -61,16 +61,18 @@ export const Section = styled.section`
         ::placeholder,
         ::-webkit-input-placeholder {
           color: #0f264f;
+          opacity: 0.75;
         }
         :-ms-input-placeholder {
           color: #0f264f;
+          opacity: 0.75;
         }
 
         width: calc(50% - 4px);
         max-width: 250px;
         height: 48px;
         background: #ffffff;
-        opacity: 0.85;
+        
         border: 1px solid #b6b6b6;
         box-sizing: border-box;
         box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.25);
@@ -107,9 +109,11 @@ export const Section = styled.section`
         ::placeholder,
         ::-webkit-input-placeholder {
           color: #0f264f;
+          opacity: 0.75;
         }
         :-ms-input-placeholder {
           color: #0f264f;
+          opacity: 0.75;
         }
       }
 
