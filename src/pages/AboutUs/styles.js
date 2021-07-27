@@ -43,8 +43,6 @@ export const Section = styled.section`
     @media (max-width: 499px) {
       width: 10%;
     }
-
-    padding-top: 200px;
   }
 
   p {
@@ -68,6 +66,7 @@ export const SectionAboutUs = styled.section`
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
+    padding: 0 0 60px 0;
   }
 
 

@@ -23,9 +23,10 @@ export const CdnLogo = styled.img`
   display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
+  width: 221px;
 
-  @media (max-width: 1250px) {
-    width: 40%;
+  @media (max-width: 450px) {
+    width: 150px;
   }
 `;
 
@@ -47,7 +48,6 @@ export const ButtonClose = styled.button`
 export const NavBar = styled.div`
   float: right;
   margin-top: 36px;
-  margin-right: 100px;
   transition: all 0.5s;
   &.menuOpened {
     left: 0;
@@ -66,7 +66,6 @@ export const NavBar = styled.div`
 
   ul {
     list-style: none;
-    padding-right: 100px;
 
     @media (max-width: 1250px) {
       padding: 0;
