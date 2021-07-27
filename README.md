@@ -2,6 +2,15 @@
 
 Esse repositório contém o código desenvolvido durante o evento HACK4GOOD da Provi, em que a equipe foi responsável por criar um site para a ONG CENEF. 
 
+<h4 align='center'>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/julianapedroso/cenef-web"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/julianapedroso/cenef-web">
+</h4>
+
+<h4 align='center'>
+👉 Status: Concluído ✅👏
+</h4>
+<hr />
+
 ## [Visite](https://cenef.netlify.app/)
 
 ## ⛏ Tecnologias
