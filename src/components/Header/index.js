@@ -1,38 +1,54 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Wrapper, CdnLogo, TextNavegation, NavBar } from "./styles";
+import React, { useState } from "react";
+import { Wrapper, CdnLogo, ButtonMenu, ButtonClose, NavBar } from "./styles";
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 // assets
-import Logo from "../../assets/logo.svg";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    padding: "2px 4px",
-    display: "flex",
-    alignItems: "center",
-    width: "20.875 rem",
-    height: "2.5rem",
-    border: "1px solid #000",
-    boxShadow: "none",
-  },
-  input: {
-    marginLeft: theme.spacing(1),
-    flex: 1,
-  },
-}));
+import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const classes = useStyles();
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuIsOpen((prevState) => !prevState);
+  };
 
   return (
     <>
       <Wrapper>
-        <NavBar>
+        <Link to="/">
           <CdnLogo src={Logo} alt="Logo ONG ACEF" />
-          <TextNavegation>Quem Somos</TextNavegation>
-          <TextNavegation>Quero Doar</TextNavegation>
-          <TextNavegation>Seja um voluntário</TextNavegation>
-          <TextNavegation>Contato</TextNavegation>
+        </Link>
+        <NavBar className={menuIsOpen ? "menuOpened" : ""}>
+          <ul>
+            <li>
+              <Link to="/quemsomos" onClick={() => setMenuIsOpen(false)}>
+                Quem somos
+              </Link>
+            </li>
+            <li>
+              <Link to="/doe" onClick={() => setMenuIsOpen(false)}>
+                Quero doar
+              </Link>
+            </li>
+            <li>
+              <Link to="/contato" onClick={() => setMenuIsOpen(false)}>
+                Seja um voluntário
+              </Link>
+            </li>
+            <li>
+              <Link to="/sejavoluntario" onClick={() => setMenuIsOpen(false)}>
+                Contato
+              </Link>
+            </li>
+          </ul>
+          <ButtonClose onClick={toggleMenu}>
+            <CloseIcon />
+          </ButtonClose>
         </NavBar>
+        <ButtonMenu onClick={toggleMenu}>
+          <MenuIcon />
+        </ButtonMenu>
       </Wrapper>
     </>
   );
