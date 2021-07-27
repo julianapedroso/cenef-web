@@ -51,6 +51,7 @@ export const NavBar = styled.div`
   transition: all 0.5s;
   &.menuOpened {
     left: 0;
+    z-index: 1;
   }
 
   @media (max-width: 1250px) {
