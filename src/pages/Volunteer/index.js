@@ -7,7 +7,7 @@ const Volunteer = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_xst70r8', 'template_2tx0qih', e.target, process.env.REACT_APP_USER_ID)
+    emailjs.sendForm('service_xst70r8', 'template_2tx0qih', e.target, "user_i9QlC7JPcpfAilNFerZnt")
       .then((result) => {
           console.log(result.text);
           alert("Mensagem enviada com sucesso!")
