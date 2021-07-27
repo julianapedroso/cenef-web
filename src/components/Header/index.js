@@ -32,12 +32,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contato" onClick={() => setMenuIsOpen(false)}>
+              <Link to="/sejavoluntario" onClick={() => setMenuIsOpen(false)}>
                 Seja um voluntário
               </Link>
             </li>
             <li>
-              <Link to="/sejavoluntario" onClick={() => setMenuIsOpen(false)}>
+              <Link to="/contato" onClick={() => setMenuIsOpen(false)}>
                 Contato
               </Link>
             </li>
