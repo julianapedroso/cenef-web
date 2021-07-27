@@ -27,12 +27,11 @@ justify-content: center;
   img {
     height: auto;
     width: 100%;
-    padding-top: 200px;
+    padding-top: 100px;
 
     @media (max-width: 450px) {
       height: 200px;
       padding-top: 0;
-      margin-top: 98px;
       object-fit: cover;
     }
   }

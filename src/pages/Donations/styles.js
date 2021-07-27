@@ -13,6 +13,7 @@ export const Section = styled.section`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    margin-top: 0;
   }
 
   > div {
