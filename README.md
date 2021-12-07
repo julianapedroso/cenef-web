@@ -24,7 +24,7 @@ Esse repositório contém o código desenvolvido durante o evento HACK4GOOD da P
 ## ⛏ Tecnologias
 
 - [ReactJS](https://reactjs.org/)
-- [Sytele-Components](https://styled-components.com/)
+- [Styled-Components](https://styled-components.com/)
 - [Material UI](https://styled-components.com/)
 - [EmailJS](https://www.emailjs.com/)
 
